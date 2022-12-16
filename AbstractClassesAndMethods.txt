@@ -1,1 +1,7 @@
-
+An abstract class is that class which cannot be instantiated. The class can be declared abstract by using abstract keyword. 
+An abstract class contains abstract methods, m
+--> the methods must be overriden
+--> they can't be static. Because static methods can not be overriden. Static method cannot be overriden because overriding is the concepting of dynamic binding which occurs at run time, wherease static method binds at compile time. 
+An abstract class must be extended. An abstract class may have both abstract and concrete methods but a non-abstract class can't have abstract method. \
+COncrete class must implement the abstract class method or they should be implemented by subclass of concrete methods. A concrete class must override the unimplemented abstract methods. 
+an abstract class can also have a constructor, i.e., you can add a constructor. However, this constructor will ONLY be accessible from a subclass constructor as it is not possible to instantiate an abstract class. You cannot even instantiate an abstract class from within that same class. Also, note that if we do not include a constructor in an abstract class (which is the typical case), then compiler inserts a no-arg constructor implicitly just like in the case of a normal class. And this implicitly created constructor will also be invoked from the subclass as part of constructor chaining process and this constructor will in turn invoke the super class constructor, i.e., includes a super(). So, nothing is different from the regular super class & subclass scenario. Only thing is you cannot directly instantiate abstract class. 
